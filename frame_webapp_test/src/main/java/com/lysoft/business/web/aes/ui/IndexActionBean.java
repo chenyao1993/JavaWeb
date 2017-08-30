@@ -1,15 +1,14 @@
 package com.lysoft.business.web.aes.ui;
 
-import java.util.Map;
-
+import com.lysoft.business.web.aes.common.stripes.BasicActionBean;
+import com.lysoft.web.stripes.executor.ActionLogicExecutor;
+import com.lysoft.web.stripes.executor.BasicActionCallBack;
 import net.sourceforge.stripes.action.DefaultHandler;
 import net.sourceforge.stripes.action.ForwardResolution;
 import net.sourceforge.stripes.action.Resolution;
 import net.sourceforge.stripes.action.UrlBinding;
 
-import com.lysoft.business.web.aes.common.stripes.BasicActionBean;
-import com.lysoft.web.stripes.executor.ActionLogicExecutor;
-import com.lysoft.web.stripes.executor.BasicActionCallBack;
+import java.util.Map;
 
 @UrlBinding("/index.do")
 public class IndexActionBean extends BasicActionBean {
@@ -28,5 +27,8 @@ public class IndexActionBean extends BasicActionBean {
 				return new ForwardResolution(UI_ROOT_PREFIX + "/index.jsp");
 			}			
 		});		
+	}
+
+	public void addCount(int a ,int b){
 	}
 }
