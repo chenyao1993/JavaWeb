@@ -28,4 +28,7 @@ public class IndexActionBean extends BasicActionBean {
 			}			
 		});		
 	}
+
+	public void addCount(int a ,int b){
+	}
 }
